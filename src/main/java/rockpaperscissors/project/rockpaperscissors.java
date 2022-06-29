@@ -9,10 +9,9 @@ public class rockpaperscissors
     {   
         //create user input
         Scanner scanner = new Scanner(System.in);
-
+        //while loop for playAgain
         while(true) {
         //create array
-
         String[] moves = {"rock", "paper", "scissors"};
 
         //randomize computer
@@ -39,7 +38,7 @@ public class rockpaperscissors
         }
             System.out.println("Computer move: " + computerMove);
 
-            //if loop
+            //if loop for setting rules of game
             if (playerMove.equals(computerMove)){
                 System.out.println("It's a tie!");
             }
@@ -77,7 +76,7 @@ public class rockpaperscissors
         }
         
         
-
+        scanner.close();
         
     }
 }
